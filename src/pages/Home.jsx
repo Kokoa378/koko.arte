@@ -119,16 +119,16 @@ const Home = () => {
                 <div className=" hero__service  d-flex align-items-center gap-5 mt-5 ">
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
-                      <i class="ri-car-line"></i>
+                     
                     </span>{" "}
                     Sin Cargo de envio
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
-                      <i class="ri-shield-check-line"></i>
+                     
                     </span>{" "}
-                    Pago 100% seguro
+                  
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ const Home = () => {
               <h5 className="feature__subtitle mb-4">Lo que servimos</h5>
               <h2 className="feature__title">Solo siéntate en casa</h2>
               <h2 className="feature__title">
-              nosotros nos<span>encargaremos</span>
+              nosotros nos <span>encargaremos</span>
               </h2>
              
             </Col>
