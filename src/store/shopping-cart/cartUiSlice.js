@@ -11,5 +11,5 @@ const cartUiSlice = createSlice({
   },
 });
 
-export const cartUiActions = cartUiSlice.actions;
+export const {toggle} = cartUiSlice.actions;
 export default cartUiSlice;

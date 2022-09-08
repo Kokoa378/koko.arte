@@ -23,7 +23,7 @@ const FoodDetails = () => {
 
   const product = products.find((product) => product.id === id);
   const [previewImg, setPreviewImg] = useState(product.image01);
-  const { title, price, category, desc, image01 } = product;
+  const { title, price, category, desc, image01,disp } = product;
 
   const relatedProduct = products.filter((item) => category === item.category);
 
@@ -94,14 +94,17 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Precio: <span>${price}</span>
                 </p>
                 <p className="category mb-5">
-                  Category: <span>{category}</span>
+                  Categoria: <span>{category}</span>
+                </p>
+                <p className="category mb-5">
+                  Disponible: <span>{disp}</span>
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  Add to Cart
+                Agregar al carito
                 </button>
               </div>
             </Col>
@@ -112,13 +115,13 @@ const FoodDetails = () => {
                   className={` ${tab === "desc" ? "tab__active" : ""}`}
                   onClick={() => setTab("desc")}
                 >
-                  Description
+                  Descripción
                 </h6>
                 <h6
                   className={` ${tab === "rev" ? "tab__active" : ""}`}
                   onClick={() => setTab("rev")}
                 >
-                  Review
+                  Revisar
                 </h6>
               </div>
 
@@ -183,7 +186,7 @@ const FoodDetails = () => {
             </Col>
 
             <Col lg="12" className="mb-5 mt-4">
-              <h2 className="related__Product-title">You might also like</h2>
+              <h2 className="related__Product-title">También podría gustarte  </h2>
             </Col>
 
             {relatedProduct.map((item) => (

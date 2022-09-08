@@ -1,12 +1,10 @@
 import React, { useRef, useEffect } from "react";
 
 import { Container } from "reactstrap";
-import logo from "../../assets/images/res-logo.png";
+import logo from "../../assets/images/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-
-import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
-
+import { cartUiActions, toggle } from "../../store/shopping-cart/cartUiSlice";
 import "../../styles/header.css";
 
 const nav__links = [
@@ -15,15 +13,15 @@ const nav__links = [
     path: "/home",
   },
   {
-    display: "Foods",
+    display: "Ecommerce",
     path: "/foods",
   },
   {
-    display: "Cart",
+    display: "Carrito",
     path: "/cart",
   },
   {
-    display: "Contact",
+    display: "Contactos",
     path: "/contact",
   },
 ];
@@ -37,7 +35,7 @@ const Header = () => {
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   const toggleCart = () => {
-    dispatch(cartUiActions.toggle());
+    dispatch(toggle());
   };
 
   useEffect(() => {
@@ -61,7 +59,7 @@ const Header = () => {
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
             <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
+            <h5>Kokoa.Arte</h5>
           </div>
 
           {/* ======= menu ======= */}

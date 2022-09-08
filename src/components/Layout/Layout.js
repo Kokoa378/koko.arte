@@ -9,16 +9,16 @@ import { useSelector } from "react-redux";
 
 const Layout = () => {
   const showCart = useSelector((state) => state.cartUi.cartIsVisible);
+  console.log(showCart)
+  /**  <Footer /> */
   return (
     <div>
       <Header />
-
       {showCart && <Carts />}
-
       <div>
         <Routes />
       </div>
-      <Footer />
+    
     </div>
   );
 };

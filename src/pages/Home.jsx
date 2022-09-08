@@ -24,28 +24,28 @@ import foodCategoryImg03 from "../assets/images/bread.png";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
-import whyImg from "../assets/images/location.png";
+import whyImg from "../assets/images/ko.png";
 
-import networkImg from "../assets/images/network.png";
+import networkImg from "../assets/images/photo.jpg";
 
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
 const featureData = [
   {
-    title: "Quick Delivery",
+    title: "Rapido y seguro",
     imgUrl: featureImg01,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "",
   },
 
   {
-    title: "Super Dine In",
+    title: "Super Rapido",
     imgUrl: featureImg02,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "",
   },
   {
-    title: "Easy Pick Up",
+    title: "facil y preguntar",
     imgUrl: featureImg03,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: " ",
   },
 ];
 
@@ -56,7 +56,7 @@ const Home = () => {
   const [hotPizza, setHotPizza] = useState([]);
 
   useEffect(() => {
-    const filteredPizza = products.filter((item) => item.category === "Pizza");
+    const filteredPizza = products.filter((item) => item.category === "Cuentos");
     const slicePizza = filteredPizza.slice(0, 4);
     setHotPizza(slicePizza);
   }, []);
@@ -68,15 +68,15 @@ const Home = () => {
 
     if (category === "BURGER") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Burger"
+        (item) => item.category === "Artesania"
       );
 
       setAllProducts(filteredProducts);
     }
 
-    if (category === "PIZZA") {
+    if (category === "CHROCHE") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Pizza"
+        (item) => item.category === "Chroche"
       );
 
       setAllProducts(filteredProducts);
@@ -84,9 +84,18 @@ const Home = () => {
 
     if (category === "BREAD") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Bread"
+        (item) => item.category === "Ilustraciones"
       );
 
+      setAllProducts(filteredProducts);
+    }
+
+    if (category === "CUENTOS") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Cuentos"
+      );
+
+      
       setAllProducts(filteredProducts);
     }
   }, [category]);
@@ -98,24 +107,18 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-                <h5 className="mb-3">Easy way to make an order</h5>
+                <h5 className="mb-3">En kokoa.Arte somos una familia llena de sueños,</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>HUNGRY?</span> Just wait <br /> food at
-                  <span> your door</span>
+                  <span> metas y ganas de contribuir en la prosperidad de nuestros clientes.</span> En nuestros productos encontrarán la dedicación y el cariño, moldeados con el arte de nuestros sueños. <br /> ¡Bienvenidos a nuestra casa! 
+                  <span>  ¿En qué podemos servirles?</span>
                 </h1>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                  magni delectus tenetur autem, sint veritatis!
-                </p>
-
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order now <i class="ri-arrow-right-s-line"></i>
+                    Nueva Compra <i class="ri-arrow-right-s-line"></i>
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/foods">See all foods</Link>
+                    <Link to="/foods">Ver todos los productos disponible</Link>
                   </button>
                 </div>
 
@@ -124,22 +127,21 @@ const Home = () => {
                     <span className="shipping__icon">
                       <i class="ri-car-line"></i>
                     </span>{" "}
-                    No shipping charge
+                    Sin Cargo de envio
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
                       <i class="ri-shield-check-line"></i>
                     </span>{" "}
-                    100% secure checkout
+                    Pago 100% seguro
                   </p>
                 </div>
               </div>
             </Col>
-
             <Col lg="6" md="6">
               <div className="hero__img">
-                <img src={heroImg} alt="hero-img" className="w-100" />
+                <img src={"https://github.com/rolandoto/kokoa/blob/master/Productos/Artesan%C3%ADas/IMG_5811-min-removebg-preview.png?raw=true"} alt="hero-img" className="" />
               </div>
             </Col>
           </Row>
@@ -154,19 +156,12 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h5 className="feature__subtitle mb-4">What we serve</h5>
-              <h2 className="feature__title">Just sit back at home</h2>
+              <h5 className="feature__subtitle mb-4">Lo que servimos</h5>
+              <h2 className="feature__title">Solo siéntate en casa</h2>
               <h2 className="feature__title">
-                we will <span>take care</span>
+              nosotros nos<span>encargaremos</span>
               </h2>
-              <p className="mb-1 mt-4 feature__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                officiis?
-              </p>
-              <p className="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius.{" "}
-              </p>
+             
             </Col>
 
             {featureData.map((item, index) => (
@@ -190,7 +185,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2>Popular Foods</h2>
+              <h2>Productos Populaes</h2>
             </Col>
 
             <Col lg="12">
@@ -201,7 +196,7 @@ const Home = () => {
                   } `}
                   onClick={() => setCategory("ALL")}
                 >
-                  All
+                  Todos
                 </button>
                 <button
                   className={`d-flex align-items-center gap-2 ${
@@ -209,18 +204,17 @@ const Home = () => {
                   } `}
                   onClick={() => setCategory("BURGER")}
                 >
-                  <img src={foodCategoryImg01} alt="" />
-                  Burger
+                 
+                  Artesania
                 </button>
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "PIZZA" ? "foodBtnActive" : ""
+                    category === "CHROCHE" ? "foodBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("PIZZA")}
+                  onClick={() => setCategory("CHROCHE")}
                 >
-                  <img src={foodCategoryImg02} alt="" />
-                  Pizza
+                  Telas y croche
                 </button>
 
                 <button
@@ -229,13 +223,21 @@ const Home = () => {
                   } `}
                   onClick={() => setCategory("BREAD")}
                 >
-                  <img src={foodCategoryImg03} alt="" />
-                  Bread
+                  Ilustraciones
+                </button>
+
+                <button
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "CUENTOS" ? "foodBtnActive" : ""
+                  } `}
+                  onClick={() => setCategory("CUENTOS")}
+                >
+                  Cuentos y Novelas
                 </button>
               </div>
             </Col>
 
-            {allProducts.map((item) => (
+            {allProducts?.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
                 <ProductCard item={item} />
               </Col>
@@ -248,53 +250,31 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <img src={whyImg} alt="why-tasty-treat" className="w-100" />
+              <img src={whyImg} alt="why-tasty-treat" className="w-1001" />
             </Col>
 
             <Col lg="6" md="6">
               <div className="why__tasty-treat">
                 <h2 className="tasty__treat-title mb-4">
-                  Why <span>Tasty Treat?</span>
+                  Quienes <span>Somos en Kokoa</span>
                 </h2>
                 <p className="tasty__treat-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum, minus. Tempora reprehenderit a corporis velit,
-                  laboriosam vitae ullam, repellat illo sequi odio esse iste
-                  fugiat dolor, optio incidunt eligendi deleniti!
+                Recuerdo aquellas campanitas hechas en lentejuelas de colores para adornar el árbol decembrino, recuerdo los angelitos blancos embellecidos con arabescos dorados, recuerdo las velas de cartón decoradas con parafina y mirellas plateadas, recuerdo la felicidad cuando hice mi primer dibujo en lápiz y cuando hice mi primera ilustración digital, recuerdo a mi madre en cada una de esas etapas y siento que éste gran espacio está dedicado a ella, porque aquí se contemplarán  nuestras obras y tal vez con ellas adornaremos el árbol de vuestras vidas, con sueños llenos de color, armonía y amor.
+Kokoa.Arte es una tienda virtual diseñada para mostrar las piezas artísticas que realizamos con amor y resiliencia, pero también es el gran hogar que albergará nuestra energía vital, compuesta de bellos momentos y amor hacia el universo. 
+Mi nombre es Jhonathan, aunque algunos me conocen con el seudónimo de Kokoa ¡Y quiero invitarles a mi hogar!
+
                 </p>
 
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Fresh and tasty
-                      foods
+                      <i class="ri-checkbox-circle-line"></i> Nuevo arte
                     </p>
                     <p className="choose__us-desc">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Quia, voluptatibus.
+                      Nuevo fututo
                     </p>
                   </ListGroupItem>
 
-                  <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Quality support
-                    </p>
-                    <p className="choose__us-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, earum.
-                    </p>
-                  </ListGroupItem>
-
-                  <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i>Order from any
-                      location{" "}
-                    </p>
-                    <p className="choose__us-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, earum.
-                    </p>
-                  </ListGroupItem>
                 </ListGroup>
               </div>
             </Col>
@@ -306,7 +286,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5 ">
-              <h2>Hot Pizza</h2>
+              <h2>Cuentos</h2>
             </Col>
 
             {hotPizza.map((item) => (
@@ -332,8 +312,6 @@ const Home = () => {
                   Distinctio quasi qui minus quos sit perspiciatis inventore
                   quis provident placeat fugiat!
                 </p>
-
-                <TestimonialSlider />
               </div>
             </Col>
 

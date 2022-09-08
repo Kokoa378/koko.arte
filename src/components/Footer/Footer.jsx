@@ -6,6 +6,7 @@ import "../../styles/footer.css";
 
 import { Link } from "react-router-dom";
 
+/** <img src={logo} alt="logo" /> */
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,8 +14,8 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="4" sm="6">
             <div className=" footer__logo text-start">
-              <img src={logo} alt="logo" />
-              <h5>Tasty Treat</h5>
+             
+              <h5>Kokoa</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Nesciunt pariatur accusamus
