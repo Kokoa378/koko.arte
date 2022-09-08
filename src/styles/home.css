@@ -120,6 +120,7 @@
 
   .food__category {
     padding: 15px;
+     overflow: overlay;
   }
   .food__category button {
     padding: 5px 15px;
