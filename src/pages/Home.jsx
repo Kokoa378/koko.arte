@@ -106,8 +106,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <div className="hero__content  ">
-                <span>>En kokoa.Arte somos una familia llena de sueños,</span>
+              <div className="mb-4 hero__title">
+                <span>En kokoa.Arte somos una familia llena de sueños,</span>
                 <h1 className="mb-4 hero__title">
                   <span> metas y ganas de contribuir en la prosperidad de nuestros clientes.</span> En nuestros productos encontrarán la dedicación y el cariño, moldeados con el arte de nuestros sueños. <br /> ¡Bienvenidos a nuestra casa! 
                   <span>  ¿En qué podemos servirles?</span>
