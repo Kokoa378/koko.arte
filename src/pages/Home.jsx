@@ -113,13 +113,7 @@ const Home = () => {
                   <span>  ¿En qué podemos servirles?</span>
                 </h1>
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
-                  <button className="order__btn d-flex align-items-center justify-content-between">
-                    Nueva Compra <i class="ri-arrow-right-s-line"></i>
-                  </button>
-
-                  <button className="all__foods-btn">
-                    <Link to="/foods">Ver todos los productos disponible</Link>
-                  </button>
+                 
                 </div>
 
                 <div className=" hero__service  d-flex align-items-center gap-5 mt-5 ">
@@ -303,7 +297,7 @@ Mi nombre es Jhonathan, aunque algunos me conocen con el seudónimo de Kokoa ¡Y
           <Row>
             <Col lg="6" md="6">
               <div className="testimonial ">
-                <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+                <h5 className="testimonial__subtitle mb-4">Testimonio</h5>
                 <h2 className="testimonial__title mb-4">
                   What our <span>customers</span> are saying
                 </h2>
