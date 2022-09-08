@@ -121,7 +121,7 @@ const Home = () => {
                     <span className="shipping__icon">
                      
                     </span>{" "}
-                    Sin Cargo de envio
+                  
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
