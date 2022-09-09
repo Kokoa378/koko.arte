@@ -153,7 +153,7 @@ const Home = () => {
               <h2 className="feature__title">Solo siéntate en casa</h2>
               <h2 className="feature__title">
               nosotros nos <span>encargaremos</span>
-                </TestimonialSlider>
+                <TestimonialSlider />
               </h2>
              
             </Col>
