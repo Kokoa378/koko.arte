@@ -153,6 +153,7 @@ const Home = () => {
               <h2 className="feature__title">Solo siéntate en casa</h2>
               <h2 className="feature__title">
               nosotros nos <span>encargaremos</span>
+                </TestimonialSlider>
               </h2>
              
             </Col>
@@ -267,6 +268,7 @@ Mi nombre es Jhonathan, aunque algunos me conocen con el seudónimo de Kokoa ¡Y
                       Nuevo fututo
                     </p>
                   </ListGroupItem>
+                  
 
                 </ListGroup>
               </div>
