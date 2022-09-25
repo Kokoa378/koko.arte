@@ -254,14 +254,14 @@ const products = [
     
   {
     id: "20",
-    title: "Telas, lanas y crochet",
+    title: "Muñeca para baño, colonial",
     price: 35.0,
     image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     category: "Chroche",
     disp:"2",
-    desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
+    desc: "Probando la página",
   },
   {
 ];
