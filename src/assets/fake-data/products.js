@@ -251,7 +251,7 @@ const products = [
     category: "Chroche",
     disp:"2",
     desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
-    
+    },
   {
     id: "20",
     title: "Muñeca para baño, colonial",
@@ -263,7 +263,7 @@ const products = [
     disp:"2",
     desc: "Probando la página",
   },
-  {
+ 
 ];
 
 export default products;
