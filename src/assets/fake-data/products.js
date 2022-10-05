@@ -259,12 +259,22 @@ const products = [
     image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
-    image04: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Florero.png?raw=true",
     category: "Chroche",
     disp:"2",
-    desc: "Probando la página",
-  },
- 
+    desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
+    },
+  
+  {
+    id: "21",
+    title: "Muñeca para baño, colonial",
+    price: 35.0,
+    image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
+    image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
+    image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
+    category: "Chroche",
+    disp:"2",
+    desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
+    },
 ];
 
 export default products;
