@@ -275,6 +275,18 @@ const products = [
     disp:"2",
     desc: "Cuadro en cáscara de huevo.",
     },
+  
+  {
+    id: "22",
+    title: "Cuadros en cáscara he huevo",
+    price: 24.0,
+    image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120714_335-removebg-preview.png?raw=true",
+    image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120147_933-removebg-preview.png?raw=true",
+    image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120200_714-removebg-preview.png?raw=true",
+    category: "Artesania",
+    disp:"2",
+    desc: "Tres cuadros realizados con cáscaras de huevo, porcelanicrón y anilinas de colores",
+  },
 ];
 
 export default products;
