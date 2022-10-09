@@ -201,7 +201,7 @@ const products = [
     desc: "Hermoso florero realizado en cáscara de huevo",
   },
    {
-    id: "14",
+    id: "15",
     title: "Ilustración digital",
     price: 40000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto.png?raw=true",
