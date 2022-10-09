@@ -26,8 +26,8 @@ import product_06_image_03 from "../images/bread(3).png";
 /**
  * Cuentos
  * Artesania
- * Ilustraciones
- * Crhoche
+ * Ilustracion
+ * Chroche
  * Pinturas
  */
 
@@ -37,7 +37,7 @@ const products = [
   {
     id: "01",
     title: "Posillo para el amor",
-    price: 30.000,
+    price: 30000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123136_618-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123156_073-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123137_953-removebg-preview.png?raw=true",
@@ -49,7 +49,7 @@ const products = [
   {
     id: "02",
     title: "Botellas de navidad",
-    price: 30.000,
+    price: 30000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123855_063-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123909_266-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_124517_527-removebg-preview.png?raw=true",
@@ -61,7 +61,7 @@ const products = [
   {
     id: "03",
     title: "Botellas de Navidad: muñeco de nieve",
-    price: 50.000,
+    price: 50000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125004_887-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125002_365-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125000_837-removebg-preview.png?raw=true",
@@ -73,11 +73,11 @@ const products = [
   {
     id: "04",
     title: "Pintura en estuco ",
-    price: 130.000,
+    price: 130000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_115344_809-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_115627_200-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_121009_418-removebg-preview.png?raw=true",
-    category: "ilustraciones",
+    category: "ilustracion",
     disp:"3",
     desc: "Pintura realizada en plantilla de estuco",
   },
@@ -85,7 +85,7 @@ const products = [
   {
     id: "05",
     title: "Figuritas en Acrílico",
-    price: 3.500,
+    price: 3500,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123540_343.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123604_836-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123619_718-removebg-preview.png?raw=true",
@@ -96,11 +96,11 @@ const products = [
   {
     id: "06",
     title: "Papá noel en tela y lana",
-    price: 17.000,
+    price: 17000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0660-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0661-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0664-removebg-preview.png?raw=true",
-    category: "Crhoche",
+    category: "Chroche",
     disp:"3",
     desc: "Hermosos papá Noels hechos en lana y tela",
   },
@@ -108,7 +108,7 @@ const products = [
   {
     id: "07",
     title: "Pesebres Navideños: Tela y Porcelanicrón",
-    price: 25.000,
+    price: 25000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122253_672-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122416_023-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122553_492-removebg-preview.png?raw=true",
@@ -120,7 +120,7 @@ const products = [
   {
     id: "08",
     title: "Pesebres Navideños: Tela y Porcelanicrón",
-    price: 25.000,
+    price: 25000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0653-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0651-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0650-removebg-preview.png?raw=true",
@@ -132,7 +132,7 @@ const products = [
   {
     id: "09",
     title: "Tejas Dicembrinas",
-    price: 60.000,
+    price: 60000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122730_994-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122726_076-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122713_924-removebg-preview.png?raw=true",
@@ -144,7 +144,7 @@ const products = [
   {
     id: "10",
     title: "Tejas Dicembrinas",
-    price: 50.000,
+    price: 50000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122854_093-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122855_638-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122909_167-removebg-preview.png?raw=true",
@@ -156,11 +156,11 @@ const products = [
   {
     id: "11",
     title: "Muñeca para baño",
-    price: 35.0,
+    price: 30000,
     image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
-    category: "Crhoche",
+    category: "Chroche",
     disp:"1",
     desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
     },
@@ -169,7 +169,7 @@ const products = [
   {
     id: "12",
     title: "Cuadros en cáscara he huevo",
-    price: 80.000,
+    price: 80000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120714_335-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120147_933-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_120200_714-removebg-preview.png?raw=true",
@@ -181,11 +181,11 @@ const products = [
    {
     id: "13",
     title: "Muñeca para baño: Tradición",
-    price: 80.000,
+    price: 35000,
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(7).png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(8).png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(9).png?raw=true",
-    category: "Crhoche",
+    category: "Chroche",
     disp:"1",
     desc: "Hermosa muñeca para baño hecha en tela, con un maravilloso diseño que expone la tradición antioqueña",
   },
