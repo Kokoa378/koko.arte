@@ -207,7 +207,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/3.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/2.png?raw=true",
-    category: "Ilustración",
+    category: "ilustracion",
     disp:"1",
     desc: "Hermosas ilustraciones digitales, enmarcadas en madera",
   },
