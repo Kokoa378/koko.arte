@@ -27,7 +27,7 @@ import product_06_image_03 from "../images/bread(3).png";
  * Cuentos
  * Artesania
  * Ilustraciones
- * Telas y croche
+ * Crhoche
  * Pinturas
  */
 
@@ -77,7 +77,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_115344_809-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_115627_200-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_121009_418-removebg-preview.png?raw=true",
-    category: "Pinturas",
+    category: "ilustraciones",
     disp:"3",
     desc: "Pintura realizada en plantilla de estuco",
   },
@@ -100,7 +100,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0660-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0661-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0664-removebg-preview.png?raw=true",
-    category: "Telas y croche",
+    category: "Crhoche",
     disp:"3",
     desc: "Hermosos papá Noels hechos en lana y tela",
   },
@@ -160,7 +160,7 @@ const products = [
     image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
-    category: "Telas y croche",
+    category: "Crhoche",
     disp:"1",
     desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
     },
@@ -185,7 +185,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(7).png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(8).png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(9).png?raw=true",
-    category: "Telas y Croche",
+    category: "Crhoche",
     disp:"1",
     desc: "Hermosa muñeca para baño hecha en tela, con un maravilloso diseño que expone la tradición antioqueña",
   },
