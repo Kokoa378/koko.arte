@@ -25,9 +25,9 @@ import product_06_image_03 from "../images/bread(3).png";
 
 /**
  * Cuentos
- * Artesanía
+ * Artesania
  * Ilustraciones
- * Croché
+ * Telas y croche
  * Pinturas
  */
 
@@ -41,7 +41,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123136_618-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123156_073-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123137_953-removebg-preview.png?raw=true",
-    category: "Artesanía",
+    category: "Artesania",
     disp:"1",
     desc: "Ancheta en forma de posillo con unas hermosas letras diseñadas en porselanicrón",
   },
@@ -53,7 +53,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123855_063-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123909_266-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_124517_527-removebg-preview.png?raw=true",
-    category: "Artesanía",
+    category: "Artesania",
     disp:"1",
     desc: "Botellas de vidrio recicladas, adornadas con un hermoso papá noel en porcelanicrón",
   },
@@ -65,7 +65,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125004_887-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125002_365-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_125000_837-removebg-preview.png?raw=true",
-    category: "Artesanía",
+    category: "Artesania",
     disp:"1",
     desc: "Botellas de vidrio recicladas, adornadas con un hermoso muñeco de nieve en porcelanicrón",
   },
@@ -89,7 +89,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123540_343.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123604_836-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_123619_718-removebg-preview.png?raw=true",
-    category: "Artesanías",
+    category: "Artesania",
     disp:"3",
     desc: "Llaveros de ángeles realizados en acrílico",
   },
@@ -100,7 +100,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0660-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0661-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0664-removebg-preview.png?raw=true",
-    category: "Croché",
+    category: "Telas y croche",
     disp:"3",
     desc: "Hermosos papá Noels hechos en lana y tela",
   },
@@ -112,7 +112,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122253_672-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122416_023-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122553_492-removebg-preview.png?raw=true",
-    category: "Artesanías",
+    category: "Artesania",
     disp:"3",
     desc: "Hermosos pesebres hechos en tela y porcelanicrón",
   },
@@ -124,7 +124,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0653-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0651-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/IMG_0650-removebg-preview.png?raw=true",
-    category: "Artesanías",
+    category: "Artesania",
     disp:"3",
     desc: "Hermosos pesebres hechos en tela y porcelanicrón",
   },
@@ -136,7 +136,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122730_994-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122726_076-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122713_924-removebg-preview.png?raw=true",
-    category: "Artesanías",
+    category: "Artesania",
     disp:"1",
     desc: "Hermosas tejas de barro con diseños dicembrinos hechos en porcelanicrón",
   },
@@ -148,7 +148,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122854_093-removebg-preview.png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122855_638-removebg-preview.png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/DJI_20221001_122909_167-removebg-preview.png?raw=true",
-    category: "Artesanías",
+    category: "Artesania",
     disp:"1",
     desc: "Hermosas teja de barro que exhibe un lindo pecebre hecho en porcelanicrón",
   },
@@ -160,7 +160,7 @@ const products = [
     image01: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image02: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
     image03: "https://github.com/rolandoto/kokoa/blob/master/Productos/Telas,%20lanas%20y%20croch%C3%A9/FDZF3105-removebg-preview.png?raw=true",
-    category: "Croché",
+    category: "Telas y croche",
     disp:"1",
     desc: "Muñeca para baño realizada con tela de toalla, porcelanicrón, algodón y madera.",
     },
@@ -185,7 +185,7 @@ const products = [
     image01: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(7).png?raw=true",
     image02: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(8).png?raw=true",
     image03: "https://github.com/Kokoa378/imaganes-kokoat/blob/main/Mi%20proyecto%20(9).png?raw=true",
-    category: "Croché",
+    category: "Telas y Croche",
     disp:"1",
     desc: "Hermosa muñeca para baño hecha en tela, con un maravilloso diseño que expone la tradición antioqueña",
   },
