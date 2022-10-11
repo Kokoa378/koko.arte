@@ -2,20 +2,23 @@ import React, { useRef } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 const Register = () => {
   const signupNameRef = useRef();
   const signupPasswordRef = useRef();
   const signupEmailRef = useRef();
 
+  const navigate = useNavigate()
+
   const submitHandler = (e) => {
     e.preventDefault();
+    navigate("/")
   };
 
   return (
     <Helmet title="Signup">
-      <CommonSection title="Signup" />
+      <CommonSection title="Registrarse" />
       <section>
         <Container>
           <Row>
@@ -24,7 +27,7 @@ const Register = () => {
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Full name"
+                    placeholder="Nombre Completo"
                     required
                     ref={signupNameRef}
                   />
@@ -32,7 +35,7 @@ const Register = () => {
                 <div className="form__group">
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Correo "
                     required
                     ref={signupEmailRef}
                   />
@@ -40,7 +43,7 @@ const Register = () => {
                 <div className="form__group">
                   <input
                     type="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     required
                     ref={signupPasswordRef}
                   />
@@ -49,7 +52,7 @@ const Register = () => {
                   Sign Up
                 </button>
               </form>
-              <Link to="/login">Already have an account? Login</Link>
+              <Link to="/login">Ya tienes cuenta</Link>
             </Col>
           </Row>
         </Container>

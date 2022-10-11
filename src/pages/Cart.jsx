@@ -13,22 +13,22 @@ const Cart = () => {
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   return (
     <Helmet title="Cart">
-      <CommonSection title="Your Cart" />
+      <CommonSection title="Tu Carrito" />
       <section>
         <Container>
           <Row>
             <Col lg="12">
               {cartItems.length === 0 ? (
-                <h5 className="text-center">Your cart is empty</h5>
+                <h5 className="text-center">Tu Carrito</h5>
               ) : (
                 <table className="table table-bordered">
                   <thead>
                     <tr>
-                      <th>Image</th>
-                      <th>Product Title</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
-                      <th>Delete</th>
+                      <th>Imagen</th>
+                      <th>Nombre del producto</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th>Eliminar</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -44,13 +44,13 @@ const Cart = () => {
                   Subtotal: $
                   <span className="cart__subtotal">{totalAmount}</span>
                 </h6>
-                <p>Taxes and shipping will calculate at checkout</p>
+                <p>Los impuestos y el envío se calcularán al finalizar la compra</p>
                 <div className="cart__page-btn">
                   <button className="addTOCart__btn me-4">
-                    <Link to="/foods">Continue Shopping</Link>
+                    <Link to="/foods">Continue comprando</Link>
                   </button>
                   <button className="addTOCart__btn">
-                    <Link to="/checkout">Proceed to checkout</Link>
+                    <Link to="/checkout">Pasar por la caja</Link>
                   </button>
                 </div>
               </div>

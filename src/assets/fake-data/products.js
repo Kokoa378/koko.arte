@@ -32,6 +32,51 @@ import product_06_image_03 from "../images/bread(3).png";
  */
 
 
+ const MenuItems = [
+  
+  {
+    id: 1,
+    itemId: "buger01",
+    name: "Todos",
+    category: "Cuentos",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fburger3.png?alt=media&token=0ebe8311-6378-411b-9b6e-d7a6d2a106a2",
+  },
+  {
+    id: 2,
+    itemId: "pizza01",
+    name: "Artesania",
+    category: "Artesania",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fpizzaslice.png?alt=media&token=c91c0c7e-ffa9-41be-ba84-c3b45c79d483",
+  },
+  {
+    id: 3,
+    itemId: "hotdog01",
+    name: "Ilustraciones",
+    category: "Ilustraciones",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fhdog1.png?alt=media&token=658e67d8-9284-4ba4-93ad-778dad99ce9c",
+  },
+  {
+    id: 4,
+    itemId: "taco01",
+    name: "Chroche",
+    category: "Chroche",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Ftaco1.png?alt=media&token=b78c8e68-c1a6-4e43-8c43-6ef9f23aa59f",
+  },
+  {
+    id: 5,
+    itemId: "snack01",
+    name: "Pinturas",
+    category: "Pinturas",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fsnack1.png?alt=media&token=d670617e-4bfc-4693-aa8c-211db9f9d706",
+  },
+];
+
+
 
 const products = [
   {
@@ -213,4 +258,4 @@ const products = [
   },
 ];
 
-export default products;
+export {products,MenuItems}

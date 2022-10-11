@@ -2,30 +2,20 @@ import React, { useState, useEffect } from "react";
 
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-
 import heroImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
-
 import { Link } from "react-router-dom";
-
 import Category from "../components/UI/category/Category.jsx";
-
 import "../styles/home.css";
-
 import featureImg01 from "../assets/images/service-01.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
-
-import products from "../assets/fake-data/products.js";
-
+import {MenuItems, products} from "../assets/fake-data/products.js";
 import foodCategoryImg01 from "../assets/images/hamburger.png";
 import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
-
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
-
 import whyImg from "../assets/images/ko.png";
-
 import networkImg from "../assets/images/photo.jpg";
 
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
@@ -50,55 +40,42 @@ const featureData = [
 ];
 
 const Home = () => {
+
+  
+
   const [category, setCategory] = useState("ALL");
   const [allProducts, setAllProducts] = useState(products);
+  const [detail,setDetail] = useState(null)
 
-  const [hotPizza, setHotPizza] = useState([]);
+  const [isMainData, setMainData] = useState(
+    products.filter((element) => element.category == "Artesania")
+  );
 
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    
+    // menu Card active class changer
+    
+  
+  }, [isMainData]);
+
+  const setData = (itemId) => {
+    setMainData(products.filter((element) => element.category == itemId));
+    setDetail(itemId)
+  };
+
+
+  
+  const [hotPizza, setHotPizza] = useState([]); 
+  
   useEffect(() => {
     const filteredPizza = products.filter((item) => item.category === "Cuentos");
     const slicePizza = filteredPizza.slice(0, 4);
     setHotPizza(slicePizza);
   }, []);
 
-  useEffect(() => {
-    if (category === "ALL") {
-      setAllProducts(products);
-    }
-
-    if (category === "BURGER") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Artesania"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "CHROCHE") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Chroche"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "BREAD") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Ilustraciones"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "CUENTOS") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Cuentos"
-      );
-
-      
-      setAllProducts(filteredProducts);
-    }
-  }, [category]);
+  
 
   return (
     <Helmet title="Home">
@@ -184,54 +161,21 @@ const Home = () => {
 
             <Col lg="12">
               <div className="food__category d-flex align-items-center justify-content-center gap-4">
-                <button
-                  className={`all__btn  ${
-                    category === "ALL" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("ALL")}
-                >
-                  Todos
-                </button>
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "BURGER" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("BURGER")}
-                >
-                 
-                  Artesania
-                </button>
+                {MenuItems.map(index  => (
+                   <button
+                   className={`d-flex align-items-center gap-2 ${
+                    index.category==detail? "foodBtnActive" : ""
+                   } `}
+                   onClick={() => setData(index.category)}>
+                    {index.name}
+                 </button>
+                ))}
 
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "CHROCHE" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("CHROCHE")}
-                >
-                  Telas y croche
-                </button>
-
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "BREAD" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("BREAD")}
-                >
-                  Ilustraciones
-                </button>
-
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "CUENTOS" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("CUENTOS")}
-                >
-                  Cuentos y Novelas
-                </button>
+               
               </div>
             </Col>
 
-            {allProducts?.map((item) => (
+            {isMainData?.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
                 <ProductCard item={item} />
               </Col>

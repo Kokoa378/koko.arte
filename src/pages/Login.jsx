@@ -2,19 +2,22 @@ import React, { useRef } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const loginNameRef = useRef();
   const loginPasswordRef = useRef();
 
+  const navigate = useNavigate()
+
   const submitHandler = (e) => {
     e.preventDefault();
+    navigate("/")
   };
 
   return (
     <Helmet title="Login">
-      <CommonSection title="Login" />
+      <CommonSection title="Iniciar session" />
       <section>
         <Container>
           <Row>
@@ -23,7 +26,7 @@ const Login = () => {
                 <div className="form__group">
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Correo"
                     required
                     ref={loginNameRef}
                   />
@@ -31,7 +34,7 @@ const Login = () => {
                 <div className="form__group">
                   <input
                     type="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     required
                     ref={loginPasswordRef}
                   />
@@ -41,7 +44,7 @@ const Login = () => {
                 </button>
               </form>
               <Link to="/register">
-                Don't have an account? Create an account
+                no tienes cuenta registrate
               </Link>
             </Col>
           </Row>
