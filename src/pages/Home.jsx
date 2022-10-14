@@ -22,13 +22,13 @@ import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
 const featureData = [
   {
-    title: "Rapido y seguro",
+    title: "Productos reciclabes",
     imgUrl: featureImg01,
     desc: "",
   },
 
   {
-    title: "Super Rapido",
+    title: "Productos 100% Colombianos",
     imgUrl: featureImg02,
     desc: "",
   },
@@ -64,8 +64,6 @@ const Home = () => {
     setMainData(products.filter((element) => element.category == itemId));
     setDetail(itemId)
   };
-
-
   
   const [hotPizza, setHotPizza] = useState([]); 
   
@@ -74,8 +72,6 @@ const Home = () => {
     const slicePizza = filteredPizza.slice(0, 4);
     setHotPizza(slicePizza);
   }, []);
-
-  
 
   return (
     <Helmet title="Home">
@@ -146,38 +142,6 @@ const Home = () => {
                   <h5 className=" fw-bold mb-3">{item.title}</h5>
                   <p>{item.desc}</p>
                 </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h2>Productos Populaes</h2>
-            </Col>
-
-            <Col lg="12">
-              <div className="food__category d-flex align-items-center justify-content-center gap-4">
-                {MenuItems.map(index  => (
-                   <button
-                   className={`d-flex align-items-center gap-2 ${
-                    index.category==detail? "foodBtnActive" : ""
-                   } `}
-                   onClick={() => setData(index.category)}>
-                    {index.name}
-                 </button>
-                ))}
-
-               
-              </div>
-            </Col>
-
-            {isMainData?.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
-                <ProductCard item={item} />
               </Col>
             ))}
           </Row>

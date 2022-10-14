@@ -51,8 +51,7 @@ const Checkout = () => {
                     required
                     onChange={(e) => setEnterName(e.target.value)}
                   />
-                </div>
-
+                </div>1
                 <div className="form__group">
                   <input
                     type="email"
@@ -98,22 +97,22 @@ const Checkout = () => {
                 </button>
               </form>
             </Col>
-
-            <Col lg="4" md="6">
-              <div className="checkout__bill">
-                <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Subtotal: <span>${cartTotalAmount}</span>
-                </h6>
-                <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Comprar: <span>${shippingCost}</span>
-                </h6>
-                <div className="checkout__total">
-                  <h5 className="d-flex align-items-center justify-content-between">
-                    Total: <span>${totalAmount}</span>
-                  </h5>
+                
+              <Col lg="4" md="6">
+                <div className="checkout__bill">
+                  <h6 className="d-flex align-items-center justify-content-between mb-3">
+                    Subtotal: <span>${cartTotalAmount}</span>
+                  </h6>
+                  <h6 className="d-flex align-items-center justify-content-between mb-3">
+                    Comprar: <span>${shippingCost}</span>
+                  </h6>
+                  <div className="checkout__total">
+                    <h5 className="d-flex align-items-center justify-content-between">
+                      Total: <span>${totalAmount}</span>
+                    </h5>
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
           </Row>
         </Container>
       </section>

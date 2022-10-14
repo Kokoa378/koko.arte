@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Container, Row, Col } from "reactstrap";
+import { MenuItems } from "../../../assets/fake-data/products";
 
 import categoryImg01 from "../../../assets/images/category-01.png";
 import categoryImg02 from "../../../assets/images/category-02.png";
@@ -38,12 +39,12 @@ const Category = () => {
   return (
     <Container>
       <Row>
-        {categoryData.map((item, index) => (
+        {MenuItems.map((item, index) => (
           <Col lg="3" md="4" sm="6" xs="6" className="mb-4" key={index}>
-            <Link to="/foods" className="category__item d-flex align-items-center gap-3">
+            <Link to={`/foods/product/${item.category}`} className="category__item d-flex align-items-center gap-3">
               <div className="category__img">
               </div>
-              <h6>{item.display}</h6>
+              <h6>{item.name}</h6>
             </Link>
           </Col>
         ))}
