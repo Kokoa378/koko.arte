@@ -12,6 +12,7 @@ const ProductCard = (props) => {
   const dispatch = useDispatch();
 
   const addToCart = () => {
+    alert("Agregado")
     dispatch(
       cartActions.addItem({
         id,

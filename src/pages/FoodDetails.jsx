@@ -25,6 +25,7 @@ const FoodDetails = () => {
   const relatedProduct = products.filter((item) => category === item.category);
 
   const addItem = () => {
+    alert("Agregado")
     dispatch(
       cartActions.addItem({
         id,
