@@ -14,7 +14,7 @@ const nav__links = [
   },
   {
     display: "Ecommerce",
-    path: "/foods",
+    path: "/foods/product/Artesania",
   },
   {
     display: "Carrito",
